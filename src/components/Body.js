@@ -1,6 +1,7 @@
 import React from 'react'
 import PhotoCard from './pages/PhotoCard'
 import LogoCard from './pages/LogoCard'
+import SlideCard from './pages/SlideCard'
 
 function Body() {
     return (
@@ -17,6 +18,8 @@ function Body() {
             <p style={{ textAlign: "center", margin: "10px" }}>Looking for a furry companion? Know why MMP is the perfect options for you.</p>
             <LogoCard />
             <h1 style={{ textAlign: "center", marginTop: "20px" }}>Exciting Services For Your Pets</h1>
+            <h1 style={{ textAlign: "center", marginTop: "20px" }}>Meet Our Happy Customers</h1>
+            <SlideCard />
         </div>
     )
 }
