@@ -96,14 +96,18 @@ function Navbar2() {
                                     Login
                                 </a>
                                 <ul className="dropdown-menu">
-                                    <li><a className="dropdown-item" href="/">Login</a></li>
-                                    <li><a className="dropdown-item" href="/">Log Out</a></li>
+                                    <div className="btn-group" role="group" aria-label="Default button group">
+                                        {/* <li><a className="dropdown-item" href="/"><button type="button" class="btn btn-outline-primary">Login</button></a></li>
+                                        <li><a className="dropdown-item" href="/"><button type="button" class="btn btn-outline-primary">Sign Up</button></a></li> */}
+                                        <button type="button" class="btn btn-outline-primary">Login</button>
+                                        <button type="button" class="btn btn-outline-primary">Sign Up</button>
+                                    </div>
                                 </ul>
                             </li>
                         </ul>
                     </div>
-                </div>
-            </nav>
+                </div >
+            </nav >
         </>
     )
 }
