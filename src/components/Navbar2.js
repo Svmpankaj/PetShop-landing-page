@@ -2,9 +2,10 @@ import React from 'react'
 
 function Navbar2() {
     return (
-        <>
-            <nav className="navbar navbar-expand-lg bg-body-tertiary">
-                <div className="container-fluid " style={{ justifyContent: 'flex-end' }}>
+        <div style={{ height: 'auto', position: 'relative', width: '100%' }}>
+            <nav className="navbar navbar-expand-lg bg-body-tertiary" >
+                <img src="./images/background img.jpg" alt="background" style={{ width: '100%', display: 'block' }} />
+                <div className="container-fluid " style={{ justifyContent: 'flex-end', position: 'absolute' }}>
                     <a className="navbar-brand" href="/"><img src="./images/fur mama logo.png" alt="fur mama logo" width="200px" /></a>
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                         <span className="navbar-toggler-icon"></span>
@@ -96,9 +97,7 @@ function Navbar2() {
                                     Login
                                 </a>
                                 <ul className="dropdown-menu">
-                                    <div className="btn-group" role="group" aria-label="Default button group">
-                                        {/* <li><a className="dropdown-item" href="/"><button type="button" class="btn btn-outline-primary">Login</button></a></li>
-                                        <li><a className="dropdown-item" href="/"><button type="button" class="btn btn-outline-primary">Sign Up</button></a></li> */}
+                                    <div className="btn-group mx-1" role="group" aria-label="Default button group">
                                         <button type="button" class="btn btn-outline-primary">Login</button>
                                         <button type="button" class="btn btn-outline-primary">Sign Up</button>
                                     </div>
@@ -108,7 +107,7 @@ function Navbar2() {
                     </div>
                 </div >
             </nav >
-        </>
+        </div>
     )
 }
 
